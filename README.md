@@ -1,4 +1,3 @@
-````markdown
 # ✨ Botpress Chatbot Integration with Moodle ✨
 
 This guide provides comprehensive, step-by-step instructions on how to seamlessly integrate your [Botpress](https://botpress.com/) chatbot into your [Moodle](https://moodle.org/) learning management system using its shareable link and embed code. Enhance your Moodle site with interactive AI!
@@ -7,17 +6,18 @@ This guide provides comprehensive, step-by-step instructions on how to seamlessl
 
 ## 📚 Table of Contents
 
-- [Prerequisites](#-prerequisites)  
-- [Integration Steps](#-integration-steps)  
-  - [Step 1: Access Moodle's Additional HTML Settings](#step-1-access-moodles-additional-html-settings)  
-  - [Step 2: Embed the Botpress Webchat Code](#step-2-embed-the-botpress-webchat-code)  
-  - [Step 3: Customize Webchat Placement with CSS](#step-3-customize-webchat-placement-with-css)  
-  - [Step 4: Purge Moodle Cache](#step-4-purge-moodle-cache)  
-  - [Step 5: Test the Integration](#step-5-test-the-integration)  
-- [🖥️ Optional: Full-Screen Chatbot](#️-optional-full-screen-chatbot)  
-- [💡 Why Integrate a Chatbot?](#-why-integrate-a-chatbot)  
-- [🛠️ Troubleshooting](#️-troubleshooting)  
-- [✅ Summary of Key Actions](#-summary-of-key-actions)
+* [Prerequisites](#-prerequisites)
+* [Integration Steps](#-integration-steps)
+
+  * [Step 1: Access Moodle's Additional HTML Settings](#step-1-access-moodles-additional-html-settings)
+  * [Step 2: Embed the Botpress Webchat Code](#step-2-embed-the-botpress-webchat-code)
+  * [Step 3: Customize Webchat Placement with CSS](#step-3-customize-webchat-placement-with-css)
+  * [Step 4: Purge Moodle Cache](#step-4-purge-moodle-cache)
+  * [Step 5: Test the Integration](#step-5-test-the-integration)
+* [🖥️ Optional: Full-Screen Chatbot](#️-optional-full-screen-chatbot)
+* [💡 Why Integrate a Chatbot?](#-why-integrate-a-chatbot)
+* [🛠️ Troubleshooting](#️-troubleshooting)
+* [✅ Summary of Key Actions](#-summary-of-key-actions)
 
 ---
 
@@ -25,8 +25,8 @@ This guide provides comprehensive, step-by-step instructions on how to seamlessl
 
 Before you begin, ensure you have:
 
-- ✅ Administrator access to your Moodle site.
-- ✅ Your Botpress chatbot's shareable link and embed code (available in your Botpress cloud dashboard).
+* ✅ Administrator access to your Moodle site.
+* ✅ Your Botpress chatbot's shareable link and embed code (available in your Botpress cloud dashboard).
 
 ---
 
@@ -35,8 +35,8 @@ Before you begin, ensure you have:
 ### Step 1: Access Moodle's Additional HTML Settings
 
 1. Log in to Moodle as an **Administrator**.
-2. Navigate to:  
-   `Site Administration > Appearance > Themes > [Your Active Theme] > Additional HTML`  
+2. Navigate to:
+   `Site Administration > Appearance > Themes > [Your Active Theme] > Additional HTML`
    Replace `[Your Active Theme]` with the actual name of your Moodle theme (e.g., `Boost`, `Classic`).
 
 ---
@@ -48,7 +48,7 @@ Paste the following code in the **"Before BODY is closed"** section of the Addit
 ```html
 <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/01/08/09/20250108090115-LGV0EJSE.js"></script>
-````
+```
 
 > ⚠️ **Note**: The second script tag contains your **specific chatbot ID**. Make sure it matches the code provided in your Botpress dashboard.
 
@@ -152,12 +152,15 @@ If something doesn’t work:
 
 ## ✅ Summary of Key Actions
 
-✔️ Add Botpress Webchat Code to Moodle
-✔️ Customize Chatbot Position with CSS
-✔️ Purge Moodle Cache
-✔️ Test and Interact with the Bot
+* ✔️ Add Botpress Webchat Code to Moodle
+* ✔️ Customize Chatbot Position with CSS
+* ✔️ Purge Moodle Cache
+* ✔️ Test and Interact with the Bot
 
 ---
 
 > 📬 For further customizations or help with advanced features like NLP integrations, database connections, or Moodle plugin development, feel free to open an issue or contact the maintainer.
 
+---
+
+Happy Chatbotting! 💬✨
